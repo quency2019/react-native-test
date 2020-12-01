@@ -1,0 +1,24 @@
+1.react-navigation 版本号 对应的
+react-navigation-stack
+react-navigation-tabs
+react-navigation-drawer
+三个扩展组件组要用到时npm install  注意版本号
+
+https://github.com/react-navigation/react-navigation/releases/tag/v4.0.0
+
+
+react-navigation-stack
+react-navigation-tabs
+react-navigation-drawer
+
+这三个组件相当于这个库的扩展，如果用到需要额外安装，你npm install一下应该就可以了，安装的时候注意版本号
+
+react-navigation 4.4.3 对应的是 react-navigation-stack 2.10.2
+
+2.react-native  使用iconfont  
+使用react-native-svg  和react-native-iconfont-cli最简单
+
+https://github.com/iconfont-cli/react-native-iconfont-cli
+
+# 修改 symbol_url 配置后执行：
+npx iconfont-rn

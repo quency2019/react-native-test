@@ -1,0 +1,24 @@
+/* eslint-disable */
+
+import React from 'react';
+import { Svg, Path } from 'react-native-svg';
+import { getIconColor } from './helper';
+
+let Iconshouye = ({ size, color, ...rest }) => {
+  return (
+    <Svg viewBox="0 0 1199 1024" width={size} height={size} {...rest}>
+      <Path
+        d="M589.24123964 74.06691036L74.65391036 588.70868966l208.92041015 0 0 337.48330078 195.58828125-1e-8c33.4494-72.67238964 88.82055-133.17893965 157.66433965-173.07944999-0.23813965-15.2613-0.36998965-32.42816982-0.11861983-54.84285-79.2747 39.47436035-144.77958018 102.40578018-187.3872 179.71613964L331.78672813 877.98583096 331.78672813 540.49628907 188.24551719 540.49628907l400.66965-400.66965L989.59003965 540.49631983 846.04971641 540.49631983l0 337.49033203L717.47979453 877.98665186l0 48.20625 176.78232422 0L894.26211875 588.70869141l208.92041016 0L589.24123964 74.06691036z"
+        fill={getIconColor(color, 0, '#333333')}
+      />
+    </Svg>
+  );
+};
+
+Iconshouye.defaultProps = {
+  size: 18,
+};
+
+Iconshouye = React.memo ? React.memo(Iconshouye) : Iconshouye;
+
+export default Iconshouye;
